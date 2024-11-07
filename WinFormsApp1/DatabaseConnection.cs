@@ -5,9 +5,9 @@ namespace DemoProject
     internal class DatabaseConnection
     {
         private const string CONNECTION_STRING =    // Connection string for MySQL connection
-            "server=???;" +
-            "database=???;" +
-            "uid=???";
+            "server=127.0.0.1;" +
+            "database=exampledb;" +
+            "uid=root";
 
         private MySqlConnection _connection;    // Connection to a MySQL Database
 
