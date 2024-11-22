@@ -54,7 +54,10 @@ namespace DemoProject
             {
                 _connection.Open();
                 if (!_connection.Ping())
+                {
                     MessageBox.Show("Error: Connection unsuccessful!");
+                    return false;
+                }
                 return true;
             }
             catch (MySqlException e)
